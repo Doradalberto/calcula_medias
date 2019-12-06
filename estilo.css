@@ -215,6 +215,7 @@ li, .formula {
 		padding: 0;
 	}
 	.C1 {
+		margin-top: 2.3rem;
 		width: 100%;
 		padding-bottom: 1.6rem;
 		padding: 1rem;
@@ -224,7 +225,7 @@ li, .formula {
 		padding: 1rem;
 	}
 	.C3 {
-		display: flex;
+		display: none;
 /*		border-color: black;
 		border-style: solid;
 		border-width: 1px;*/
