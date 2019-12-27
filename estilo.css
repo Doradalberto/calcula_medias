@@ -207,6 +207,31 @@ li, .formula {
 	  height: 1500px; /* Used in this example to enable scrolling */
 	}
 
+.square {
+	margin: 1.5rem;
+	font-size: 2rem;
+	cursor: pointer;
+	align-items: center;
+	text-align: center;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+.square a {
+	text-decoration: none;
+	color: black;
+}
+
+.C-home {
+	display: flex;
+	flex-direction: column;
+	/*flex-wrap: nowrap;*/
+	width: 100%;
+	justify-content: center;
+}
+
 @media(max-width: 550px){
 	.C0 {
 		display: none;
@@ -248,9 +273,14 @@ li, .formula {
 		display: flex !important;
 	}
 	.square {
-		width: 20rem !important;
+		margin: 0.5rem !important;
+		width: 125% !important;
 		margin-left: 0rem !important;
 		margin-right: 0rem !important;
+	}
+	.C-home {
+		width: 90%;
+		margin-left: 6%;
 	}
 
 
@@ -325,26 +355,4 @@ li, .formula {
 
 }
 
-.square {
-	margin: 1.5rem;
-	font-size: 2rem;
-	cursor: pointer;
-	align-items: center;
-	text-align: center;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	margin-left: 30%;
-	margin-right: 30%;
-}
 
-.square a {
-	text-decoration: none;
-	color: black;
-}
-
-.C-home {
-	display: block;
-	/*flex-wrap: nowrap;*/
-	width: 100%;
-	justify-content: center;
-}
