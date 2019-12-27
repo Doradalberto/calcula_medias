@@ -36,6 +36,8 @@
 	  </div> 
 	</div>
 
+
+
 	<div class="C3">
 		<a href="materia1" style="background-color: #EB7D5B">Matéria 1</a>
 		<a href="materia2" style="background-color: #FED23F">Matéria 2</a>
@@ -118,6 +120,19 @@
         document.getElementById("demo2").innerHTML = A1 + A2
     }
     /*  (A1*0.15) + (PI*0.25) + (A2*0.20) + (PF*0.30) + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10  */
+
+    window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky")
+	  } else {
+	    navbar.classList.remove("sticky");
+	  }
+	}
   </script>	
 </body>
 
