@@ -177,16 +177,16 @@ li, .formula {
 
 	.navbar {
 	  display: none;
-	  overflow: hidden;
+	  /*overflow: hidden;
 	  background-color: #333;
 	  position: fixed;
 	  top: 0;
 	  width: 100%;
 	  padding: 0px;
-	  left: 0;
+	  left: 0;*/
 	}
 
-	.navbar a {
+	/*.navbar a {
 	  float: left;
 	  display: block;
 	  color: #f2f2f2;
@@ -199,7 +199,7 @@ li, .formula {
 	.navbar a:hover {
 	  background: #ddd;
 	  color: black;
-	}
+	}*/
 
 	.main {
 	  padding: 16px;
@@ -252,6 +252,8 @@ li, .formula {
 		margin-left: 0rem !important;
 		margin-right: 0rem !important;
 	}
+
+
 
 	.navbar {
 	  overflow: hidden;
@@ -312,6 +314,12 @@ li, .formula {
 	.dropdown:hover .dropdown-content {
 	  display: block;
 	}
+	.main {
+	  padding: 16px;
+	  margin-top: 30px;
+	  height: 1500px; /* Used in this example to enable scrolling */
+	}
+
 }
 
 .square {
