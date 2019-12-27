@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<link href="reset.css" rel="reset">
-	<!-- <link href="C:\Users\dorad\OneDrive\Documentos\Insper\2 Semestre\2.FisMov\padrao.css" rel="stylesheet"> -->
-	<!-- <script language="JavaScript" src="cC:\Users\dorad\OneDrive\Documentos\Insper\2 Semestre\2.FisMov\java_notas.js"></script> -->
-	<link href="estilo.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="icon" type="image/png" href="logo.png" sizes="16x16" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="reset.css" rel="reset">
+	<link href="..\estilo.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="128x128" href="logo.png">
+	<link rel="icon" sizes="192x192" href="logo.png">
+	<link rel="icon" type="image/png" href="logo.png" sizes="16x16" />
+
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 	<title>
 		Biomecânica
 	</title>
 </head>
 <body> 
 
-	<!-- <div class="navbar">
-	  <a href="#home">Calcula médias</a>
-	  <a href="#news">Home</a>
-	  <a href="#bleh">B</a>
-	</div> -->
 	<div class="navbar">
 	  <a href="#home">Home</a>
 	  <div class="dropdown">
@@ -35,8 +32,6 @@
 	    </div>
 	  </div> 
 	</div>
-
-
 
 	<div class="C3">
 		<a href="materia1" style="background-color: #EB7D5B">Matéria 1</a>
@@ -120,19 +115,6 @@
         document.getElementById("demo2").innerHTML = A1 + A2
     }
     /*  (A1*0.15) + (PI*0.25) + (A2*0.20) + (PF*0.30) + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10  */
-
-    window.onscroll = function() {myFunction()};
-
-	var navbar = document.getElementById("navbar");
-	var sticky = navbar.offsetTop;
-
-	function myFunction() {
-	  if (window.pageYOffset >= sticky) {
-	    navbar.classList.add("sticky")
-	  } else {
-	    navbar.classList.remove("sticky");
-	  }
-	}
   </script>	
 </body>
 
