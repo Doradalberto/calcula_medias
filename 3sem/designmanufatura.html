@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="reset.css" rel="reset">
+	<!-- <link href="C:\Users\dorad\OneDrive\Documentos\Insper\2 Semestre\2.FisMov\padrao.css" rel="stylesheet"> -->
+	<!-- <script language="JavaScript" src="cC:\Users\dorad\OneDrive\Documentos\Insper\2 Semestre\2.FisMov\java_notas.js"></script> -->
+	<link href="estilo.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Design Manufatura
+	</title>
+</head>
+<body> 
+
+	<div class="navbar">
+	  <a href="#home">Calcula médias</a>
+	  <a href="#news">Home</a>
+	  <a href="#bleh">B</a>
+	</div>
+
+	<div class="C3">
+		<a href="materia1" style="background-color: #EB7D5B">Matéria 1</a>
+		<a href="materia2" style="background-color: #FED23F">Matéria 2</a>
+		<a href="materia3" style="background-color: #B5D33D">Materia 3</a>
+		<a href="materia4" style="background-color: #6CA2EA">Materia 4</a>
+		<a href="materia5" style="background-color: #442288">Materia 5</a>
+	</div>
+	<div class="C0">
+	  	<div id="mySidenav" class="sidenav">
+			  <a href="biomecanica.html" id="materia1">Biomecânica</a>
+			  <a href="desconstruindo.html" id="materia2">Desconstruindo</a>
+			  <a href="designmanufatura.html" id="materia3">Design Manufatura</a>
+			  <a href="dispositivos.html" id="materia4">Dispositivos</a>
+			  <a href="matmulti.html" id="materia5">Mat Multi</a>
+		</div>
+	</div>
+	<div class="C1">
+		<div class="titulo">
+			<p>Design para a Manufatura</p>
+		</div>
+		<div class="notas">
+		  <p>Complete com as suas notas.</p>
+		  <div class='Provas'>
+			<p> Avaliação  1 <input type="number" id="A1" max=10 min=0 /></p>
+			<p> Avaliação Intermediária (PI) <input type="number" id="PI" max=10 min=0 /></p>
+			<p> Avaliação  2 <input type="number" id="A2" max=10 min=0 /></p>
+			<p> Avaliação Final (PF) <input type="number" id="PF" max=10 min=0 /></p>
+			<p> APS 1 <input type="number" id="APS1" max=10 min=0 /></p>
+			<p> APS 2 <input type="number" id="APS2" max=10 min=0 /></p>
+			<p> APS 3 <input type="number" id="APS3" max=10 min=0 /></p>
+			<p> APS 4 <input type="number" id="APS4" max=10 min=0 /></p>
+			<p> APS 5 <input type="number" id="APS5" max=10 min=0 /></p>
+			<p> APS 6 <input type="number" id="APS6" max=10 min=0 /></p>
+			<p> APS 7 <input type="number" id="APS7" max=10 min=0 /></p>
+		  </div>
+		  <button onclick="myFunction()" class="botao" style="margin-top: 1rem; margin-bottom: 1rem;">Calcular</button>
+		  <p> Média: </p>
+		  <p id="demo" style="font-size: 2.5rem"></p>
+		</div>
+	</div>
+	<div class="C2">
+		<div class="formula">
+			<p> Fórmula para o cálculo: </p>
+			<img src="fototeste.png" style="width: 100%">
+		</div>
+		<div class="conceito">
+			<p class="subtitulo"> Critérios de aprovação </p>
+			<li> Lorem ipsum dolor sit amet, consectetur adipiscing elit </li>
+			<li> Quisque iaculis mollis orci, eget elementum tortor pellentesque sit amet </li>
+			<li> In scelerisque turpis ornare est aliquet, ac lacinia elit interdum </li>
+			<p class="subtitulo"> Verificar conceito: </p>
+			<button onclick="myFunction2()" class="botao" style="margin-top: 1rem; margin-bottom: 1rem;">Verificar</button>
+			<p id="demo2" style="font-size: 2.5rem;"></p>
+			<p style="font-size: 1rem"> *observação: as notas devem estar preenchidas </p>
+		</div>
+	</div>
+
+  <script>
+    function myFunction() {
+      let APS1 = +document.getElementById("APS1").value;
+      let APS2 = +document.getElementById("APS2").value;
+      let APS3 = +document.getElementById("APS3").value;
+      let APS4 = +document.getElementById("APS4").value;
+      let APS5 = +document.getElementById("APS5").value;
+      let APS6 = +document.getElementById("APS6").value;
+      let APS7 = +document.getElementById("APS7").value;
+      let A1 = +document.getElementById("A1").value;
+      let PI = +document.getElementById("PI").value;
+      let A2 = +document.getElementById("A2").value;
+      let PF = +document.getElementById("PF").value;
+      document.getElementById("demo").innerHTML = (A1*0.15) + (PI*0.25) + (A2*0.20) + (PF*0.30) + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10
+    }
+
+    function myFunction2() {
+    	let A1 = +document.getElementById("A1").value;
+        let PI = +document.getElementById("PI").value;
+        let A2 = +document.getElementById("A2").value;
+        let PF = +document.getElementById("PF").value;
+        document.getElementById("demo2").innerHTML = A1 + A2
+    }
+    /*  (A1*0.15) + (PI*0.25) + (A2*0.20) + (PF*0.30) + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10  */
+  </script>	
+</body>
+</html>

@@ -246,4 +246,33 @@ li, .formula {
 	.navbar, .navbar a, .main {
 		display: flex !important;
 	}
+	.square {
+		width: 20rem !important;
+		margin-left: 0rem !important;
+		margin-right: 0rem !important;
+	}
+}
+
+.square {
+	margin: 1.5rem;
+	font-size: 2rem;
+	cursor: pointer;
+	align-items: center;
+	text-align: center;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+.square a {
+	text-decoration: none;
+	color: black;
+}
+
+.C-home {
+	display: block;
+	/*flex-wrap: nowrap;*/
+	width: 100%;
+	justify-content: center;
 }
