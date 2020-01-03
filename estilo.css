@@ -35,6 +35,17 @@ p {
   font-family: 'Cardo', serif;
 }
 
+.erro404 {
+	/*margin-top: 5rem;*/
+	font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+.erro404 img {
+	margin-top: 2rem;
+	width: 40%;
+}
+
 .notas {
 	/*margin-left: 2rem;*/
 /*	border-style: solid;
@@ -268,6 +279,12 @@ li, .formula {
 		font-size: 1.6rem;
 		margin-left: 1.5rem;
 		margin-right: 1.5rem;
+	}
+	.erro404 img {
+		width: 80% !important;
+	}
+	.erro404 {
+		margin-top: 2rem;
 	}
 	.navbar, .navbar a, .main {
 		display: flex !important;
