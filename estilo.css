@@ -337,7 +337,7 @@ li, .formula {
 	}
 
 	.navbar a:hover, .dropdown:hover .dropbtn {
-	  background-color: red;
+	  background-color: #76c3d3;
 	}
 
 	.dropdown-content {
