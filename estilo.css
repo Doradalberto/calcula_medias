@@ -182,10 +182,6 @@ li, .formula {
   background-color: #555;
 }
 
-.C3 {
-	display: none;
-}
-
 	.navbar {
 	  display: none;
 	  /*overflow: hidden;
@@ -262,24 +258,6 @@ li, .formula {
 		width: 100%;
 		padding: 1rem;
 		margin-top: 2.5rem;
-	}
-	.C3 {
-		display: none;
-/*		border-color: black;
-		border-style: solid;
-		border-width: 1px;*/
-		flex-direction: column;
-		width: 100%;
-	}
-	.C3 a {
-		padding-left: 1rem; 
-		text-decoration: none;
-		color: white;
-		margin-bottom: 0.5rem;
-		border-radius: 0.5rem;
-		font-size: 1.6rem;
-		margin-left: 1.5rem;
-		margin-right: 1.5rem;
 	}
 	.erro404 img {
 		width: 80% !important;	
