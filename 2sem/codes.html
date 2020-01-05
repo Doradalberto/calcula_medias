@@ -1,44 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<link href="reset.css" rel="reset">
-	<!-- <link href="C:\Users\dorad\OneDrive\Documentos\Insper\2 Semestre\2.FisMov\padrao.css" rel="stylesheet"> -->
-	<!-- <script language="JavaScript" src="cC:\Users\dorad\OneDrive\Documentos\Insper\2 Semestre\2.FisMov\java_notas.js"></script> -->
-	<link href="estilo.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="reset.css" rel="reset">
+	<link href="..\estilo.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="128x128" href="..\logo.png">
+	<link rel="icon" sizes="192x192" href="..\logo.png">
+	<link rel="icon" type="image/png" href="..\logo.png" sizes="16x16" />
+
 	<title>
-		Base
+		CoDes
 	</title>
 </head>
 <body> 
 
 	<div class="navbar">
-	  <a href="#home">Calcula médias</a>
-	  <a href="#news">Home</a>
-	  <a href="#bleh">B</a>
+	  <a href="..\homescreen.html">Home</a>
+	  <div class="dropdown">
+	    <button class="dropbtn">Matérias 
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-content">
+		  <a href="acionamentos.html">Acionamentos Elétricos</a>
+	      <a href="cdados.html">Ciência dos Dados</a>
+	      <a href="codes.html">Co-Design de aplicativos</a>
+	      <a href="fismov.html">Física do Movimento</a>
+	      <a href="matvar.html">Matemática da Variação</a>
+	    </div>
+	  </div> 
 	</div>
 
-	<div class="C3">
-		<a href="materia1" style="background-color: #EB7D5B">Matéria 1</a>
-		<a href="materia2" style="background-color: #FED23F">Matéria 2</a>
-		<a href="materia3" style="background-color: #B5D33D">Materia 3</a>
-		<a href="materia4" style="background-color: #6CA2EA">Materia 4</a>
-		<a href="materia5" style="background-color: #442288">Materia 5</a>
-	</div>
 	<div class="C0">
 	  	<div id="mySidenav" class="sidenav">
-			  <a href="acionas.html" id="materia1">Matéria 1</a>
-			  <a href="cdados.html" id="materia2">Matéria 2</a>
-			  <a href="codes.html" id="materia3">Matéria 3</a>
-			  <a href="Notas_Fisica.html" id="materia4">Matéria 4</a>
-			  <a href="matvar.html" id="materia5">Matéria 5</a>
-			  <a href="inicio.html" id="materia6">Matéria 6</a>
+			  <a href="acionamentos.html" id="materia1">Acionamentos Elétricos</a>
+			  <a href="cdados.html" id="materia2">Ciência dos Dados</a>
+			  <a href="codes.html" id="materia3">Co-Design de aplicativos</a>
+			  <a href="fismov.html" id="materia4">Física do Movimento</a>
+			  <a href="matvar.html" id="materia5">Matemática da Variação</a>
+			  <a href="..\homescreen.html" id="materia6">Home</a>
 		</div>
 	</div>
 	<div class="C1">
 		<div class="titulo">
-			<p>Matéria 1</p>
+			<p>Co-Design de aplicativos</p>
 		</div>
 		<div class="notas">
 		  <p>Complete com as suas notas.</p>
@@ -63,7 +69,7 @@
 	<div class="C2">
 		<div class="formula">
 			<p> Fórmula para o cálculo: </p>
-			<img src="fototeste.png" style="width: 100%">
+			<img src="fotos\fototeste.png" style="width: 100%">
 		</div>
 		<div class="conceito">
 			<p class="subtitulo"> Critérios de aprovação </p>
@@ -73,7 +79,8 @@
 			<p class="subtitulo"> Verificar conceito: </p>
 			<button onclick="myFunction2()" class="botao" style="margin-top: 1rem; margin-bottom: 1rem;">Verificar</button>
 			<p id="demo2" style="font-size: 2.5rem;"></p>
-			<p style="font-size: 1rem"> *observação: as notas devem estar preenchidas </p>
+			<p style="font-size: 1rem;"> *observação: as notas devem estar preenchidas </p>
+			<p style="font-size: 1rem; margin-top: 1rem">Notas atualizadas para 2019.2</p>
 		</div>
 	</div>
 
@@ -103,4 +110,5 @@
     /*  (A1*0.15) + (PI*0.25) + (A2*0.20) + (PF*0.30) + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10  */
   </script>	
 </body>
+
 </html>
