@@ -39,7 +39,7 @@
 			  <a href="codes.html" id="materia3">Co-Design de aplicativos</a>
 			  <a href="fismov.html" id="materia4">Física do Movimento</a>
 			  <a href="matvar.html" id="materia5">Matemática da Variação</a>
-			  <a href="\Calcula Notas\homescreen.html" id="materia6">Home</a>
+			  <a href="..\homescreen.html" id="materia6">Home</a>
 		</div>
 	</div>
 	<div class="C1">
@@ -49,17 +49,16 @@
 		<div class="notas">
 		  <p>Complete com as suas notas.</p>
 		  <div class='Provas'>
-			<p> Avaliação  1 <input type="number" id="A1" max=10 min=0 /></p>
-			<p> Avaliação Intermediária (PI) <input type="number" id="PI" max=10 min=0 /></p>
-			<p> Avaliação  2 <input type="number" id="A2" max=10 min=0 /></p>
-			<p> Avaliação Final (PF) <input type="number" id="PF" max=10 min=0 /></p>
-			<p> APS 1 <input type="number" id="APS1" max=10 min=0 /></p>
-			<p> APS 2 <input type="number" id="APS2" max=10 min=0 /></p>
-			<p> APS 3 <input type="number" id="APS3" max=10 min=0 /></p>
-			<p> APS 4 <input type="number" id="APS4" max=10 min=0 /></p>
-			<p> APS 5 <input type="number" id="APS5" max=10 min=0 /></p>
-			<p> APS 6 <input type="number" id="APS6" max=10 min=0 /></p>
-			<p> APS 7 <input type="number" id="APS7" max=10 min=0 /></p>
+			<p> Avaliação 1 <input type="number" id="A1" max=10 min=0 /></p>
+			<p> Avaliação 2 (PI) <input type="number" id="A2" max=10 min=0 /></p>
+			<p> Avaliação 3 <input type="number" id="A3" max=10 min=0 /></p>
+			<p> Avaliação 4 (PF) <input type="number" id="A4" max=10 min=0 /></p>
+			<p> Lista 1 <input type="number" id="L1" max=10 min=0 /></p>
+			<p> Lista 2 <input type="number" id="L2" max=10 min=0 /></p>
+			<p> Lista 3 <input type="number" id="L3" max=10 min=0 /></p>
+			<p> Lista 4 <input type="number" id="L4" max=10 min=0 /></p>
+			<p> Projeto 1 <input type="number" id="PROJ1" max=10 min=0 /></p>
+			<p> Projeto 2 <input type="number" id="PROJ2" max=10 min=0 /></p>
 		  </div>
 		  <button onclick="myFunction()" class="botao" style="margin-top: 1rem; margin-bottom: 1rem;">Calcular</button>
 		  <p> Média: </p>
@@ -69,44 +68,59 @@
 	<div class="C2">
 		<div class="formula">
 			<p> Fórmula para o cálculo: </p>
-			<img src="fotos\fototeste.png" style="width: 100%">
+			<img src="fotos\acionamentos.png" style="width: 100%">
 		</div>
 		<div class="conceito">
 			<p class="subtitulo"> Critérios de aprovação </p>
-			<li> Lorem ipsum dolor sit amet, consectetur adipiscing elit </li>
-			<li> Quisque iaculis mollis orci, eget elementum tortor pellentesque sit amet </li>
-			<li> In scelerisque turpis ornare est aliquet, ac lacinia elit interdum </li>
-			<p class="subtitulo"> Verificar conceito: </p>
+			<li> C1) 0.9*(Média de provas) + 0.1*(Média de listas) acima de 5 </li>
+			<li> C2) Média de projetos acima de 5 </li>
+			<p class="subtitulo"> Verificar critérios: </p>
 			<button onclick="myFunction2()" class="botao" style="margin-top: 1rem; margin-bottom: 1rem;">Verificar</button>
-			<p id="demo2" style="font-size: 2.5rem;"></p>
-			<p style="font-size: 1rem;"> *observação: as notas devem estar preenchidas </p>
+			<div class="criterio">
+				<p style="font-size: 2rem; margin-top: 0.3rem;"> C1) <p id="demo2" style="font-size: 2.5rem; margin-left: 0.6rem;"></p></p>
+			</div>
+			<div class="criterio" >
+				<p style="font-size: 2rem; margin-top: 0.3rem;"> C2) <p id="demo3" style="font-size: 2.5rem; margin-left: 0.6rem;"></p></p>
+			</div>
+			<!-- <p style="font-size: 1rem;"> *observação: as notas devem estar preenchidas </p> -->
 			<p style="font-size: 1rem; margin-top: 1rem">Notas atualizadas para 2019.2</p>
 		</div>
 	</div>
 
   <script>
     function myFunction() {
-      let APS1 = +document.getElementById("APS1").value;
-      let APS2 = +document.getElementById("APS2").value;
-      let APS3 = +document.getElementById("APS3").value;
-      let APS4 = +document.getElementById("APS4").value;
-      let APS5 = +document.getElementById("APS5").value;
-      let APS6 = +document.getElementById("APS6").value;
-      let APS7 = +document.getElementById("APS7").value;
       let A1 = +document.getElementById("A1").value;
-      let PI = +document.getElementById("PI").value;
       let A2 = +document.getElementById("A2").value;
-      let PF = +document.getElementById("PF").value;
-      document.getElementById("demo").innerHTML = (A1*0.15) + (PI*0.25) + (A2*0.20) + (PF*0.30) + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10
+      let A3 = +document.getElementById("A3").value;
+      let A4 = +document.getElementById("A4").value;
+      let L1 = +document.getElementById("L1").value;
+      let L2 = +document.getElementById("L2").value;
+      let L3 = +document.getElementById("L3").value;
+      let L4 = +document.getElementById("L4").value;
+      let PROJ1 = +document.getElementById("PROJ1").value;
+      let PROJ2 = +document.getElementById("PROJ2").value;
+
+      document.getElementById("demo").innerHTML = 0.5*(PROJ1 + PROJ2)/2 + 0.45*(A1 + A2 + A3 + A4)/4 + 0.05*(L1 + L2 + L3 + L4)/4
+
     }
 
     function myFunction2() {
-    	let A1 = +document.getElementById("A1").value;
-        let PI = +document.getElementById("PI").value;
-        let A2 = +document.getElementById("A2").value;
-        let PF = +document.getElementById("PF").value;
-        document.getElementById("demo2").innerHTML = A1 + A2
+      let A1 = +document.getElementById("A1").value;
+      let A2 = +document.getElementById("A2").value;
+      let A3 = +document.getElementById("A3").value;
+      let A4 = +document.getElementById("A4").value;
+      let L1 = +document.getElementById("L1").value;
+      let L2 = +document.getElementById("L2").value;
+      let L3 = +document.getElementById("L3").value;
+      let L4 = +document.getElementById("L4").value;
+      let PROJ1 = +document.getElementById("PROJ1").value;
+      let PROJ2 = +document.getElementById("PROJ2").value;
+
+      document.getElementById("demo2").innerHTML = 0.9*(A1 + A2 + A3 + A4)/4 + 0.1*(L1 + L2 + L3 + L4)/4
+      document.getElementById("demo3").innerHTML = (PROJ1 + PROJ2) / 2
     }
+
+
     /*  (A1*0.15) + (PI*0.25) + (A2*0.20) + (PF*0.30) + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10  */
   </script>	
 </body>
