@@ -49,17 +49,23 @@
 		<div class="notas">
 		  <p>Complete com as suas notas.</p>
 		  <div class='Provas'>
-			<p> Avaliação  1 <input type="number" id="A1" max=10 min=0 /></p>
-			<p> Avaliação Intermediária (PI) <input type="number" id="PI" max=10 min=0 /></p>
-			<p> Avaliação  2 <input type="number" id="A2" max=10 min=0 /></p>
-			<p> Avaliação Final (PF) <input type="number" id="PF" max=10 min=0 /></p>
-			<p> APS 1 <input type="number" id="APS1" max=10 min=0 /></p>
-			<p> APS 2 <input type="number" id="APS2" max=10 min=0 /></p>
-			<p> APS 3 <input type="number" id="APS3" max=10 min=0 /></p>
-			<p> APS 4 <input type="number" id="APS4" max=10 min=0 /></p>
-			<p> APS 5 <input type="number" id="APS5" max=10 min=0 /></p>
-			<p> APS 6 <input type="number" id="APS6" max=10 min=0 /></p>
-			<p> APS 7 <input type="number" id="APS7" max=10 min=0 /></p>
+
+			<p> LB1 <input type="number" id="LB1" max=10 min=0 /></p>
+			<p> LB2 <input type="number" id="LB2" max=10 min=0 /></p>
+			<p> LB3 <input type="number" id="LB3" max=10 min=0 /></p>
+			<p> AT1 <input type="number" id="AT1" max=10 min=0 /></p>
+			<p> AT2 <input type="number" id="AT2" max=10 min=0 /></p>
+			<p> AT3 <input type="number" id="AT3" max=10 min=0 /></p>
+			<p> AT4 <input type="number" id="AT4" max=10 min=0 /></p>
+			</div>
+		<div class="Provas">
+			<p> AI1 <input type="number" id="AI1" max=10 min=0 /></p>
+			<p> AI2C <input type="number" id="AI2C" max=10 min=0 /></p>
+			<p> AI2P <input type="number" id="AI2P" max=10 min=0 /></p>
+			<p> QZ1 <input type="number" id="QZ1" max=10 min=0 /></p>
+			<p> QZ2 <input type="number" id="QZ2" max=10 min=0 /></p>
+			<p> QZ3 <input type="number" id="QZ3" max=10 min=0 /></p>
+
 		  </div>
 		  <button onclick="myFunction()" class="botao" style="margin-top: 1rem; margin-bottom: 1rem;">Calcular</button>
 		  <p> Média: </p>
@@ -69,16 +75,20 @@
 	<div class="C2">
 		<div class="formula">
 			<p> Fórmula para o cálculo: </p>
-			<img src="fotos\fototeste.png" style="width: 100%">
+			<img src="fotos\desmat.png" style="width: 60%">
 		</div>
 		<div class="conceito">
 			<p class="subtitulo" style="margin-bottom: 1rem;"> Critérios de aprovação </p>
-			<li> Lorem ipsum dolor sit amet, consectetur adipiscing elit </li>
-			<li> Quisque iaculis mollis orci, eget elementum tortor pellentesque sit amet </li>
-			<li> In scelerisque turpis ornare est aliquet, ac lacinia elit interdum </li>
-			<p class="subtitulo"> Verificar conceito: </p>
+			<li> Conceito de cada Objetivo de aprendizagem igual ou superior a C </li>
+			<li> Frequência superior a 75% (Obs: a frequência está vinculada à entrega das APS) </li>
+
+			<p class="subtitulo"> Verificar conceitos: </p>
 			<button onclick="myFunction2()" class="botao" style="margin-top: 1rem; margin-bottom: 1rem;">Verificar</button>
-			<p id="demo2" style="font-size: 2.5rem;"></p>
+			<p id="obj1" style="font-size: 2.5rem;"></p>
+			<p id="obj2" style="font-size: 2.5rem;"></p>
+			<p id="obj3" style="font-size: 2.5rem;"></p>
+			<p id="obj4" style="font-size: 2.5rem;"></p>
+
 			<p style="font-size: 1rem"> *observação: as notas devem estar preenchidas </p>
 			<p style="font-size: 1rem; margin-top: 1rem">Notas atualizadas para 2020.1</p>
 		</div>
@@ -86,28 +96,63 @@
 
   <script>
     function myFunction() {
-      let APS1 = +document.getElementById("APS1").value;
-      let APS2 = +document.getElementById("APS2").value;
-      let APS3 = +document.getElementById("APS3").value;
-      let APS4 = +document.getElementById("APS4").value;
-      let APS5 = +document.getElementById("APS5").value;
-      let APS6 = +document.getElementById("APS6").value;
-      let APS7 = +document.getElementById("APS7").value;
-      let A1 = +document.getElementById("A1").value;
-      let PI = +document.getElementById("PI").value;
-      let A2 = +document.getElementById("A2").value;
-      let PF = +document.getElementById("PF").value;
-      document.getElementById("demo").innerHTML = (A1*0.15) + (PI*0.25) + (A2*0.20) + (PF*0.30) + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10
+      let LB1 = +document.getElementById("LB1").value;
+      let LB2 = +document.getElementById("LB2").value;
+      let LB3 = +document.getElementById("LB3").value;
+      let AT1 = +document.getElementById("AT1").value;
+      let AT2 = +document.getElementById("AT2").value;
+      let AT3 = +document.getElementById("AT3").value;
+      let AT4 = +document.getElementById("AT4").value;
+      let AI1 = +document.getElementById("AI1").value;
+      let AI2C = +document.getElementById("AI2C").value;
+      let AI2P = +document.getElementById("AI2P").value;
+      let QZ1 = +document.getElementById("QZ1").value;
+      let QZ2 = +document.getElementById("QZ2").value;
+      let QZ3 = +document.getElementById("QZ3").value;
+
+      OBJ1 = 0.36*LB2 + 0.46*AI1 + 0.08*AT2 + 0.1*QZ3
+      OBJ2 = 0.44*AT3 + 0.56*AI2C
+      OBJ3 = 0.44*LB3 + 0.56*AI2P
+      OBJ4 = 0.17*AT1 + 0.17*LB1 + 0.66*AT4
+
+      document.getElementById("demo").innerHTML = (1.2*OBJ1 + OBJ2 + OBJ3 + OBJ4)/4.2
     }
 
     function myFunction2() {
-    	let A1 = +document.getElementById("A1").value;
-        let PI = +document.getElementById("PI").value;
-        let A2 = +document.getElementById("A2").value;
-        let PF = +document.getElementById("PF").value;
-        document.getElementById("demo2").innerHTML = A1 + A2
+      let LB1 = +document.getElementById("LB1").value;
+      let LB2 = +document.getElementById("LB2").value;
+      let LB3 = +document.getElementById("LB3").value;
+      let AT1 = +document.getElementById("AT1").value;
+      let AT2 = +document.getElementById("AT2").value;
+      let AT3 = +document.getElementById("AT3").value;
+      let AT4 = +document.getElementById("AT4").value;
+      let AI1 = +document.getElementById("AI1").value;
+      let AI2C = +document.getElementById("AI2C").value;
+      let AI2P = +document.getElementById("AI2P").value;
+      let QZ1 = +document.getElementById("QZ1").value;
+      let QZ2 = +document.getElementById("QZ2").value;
+      let QZ3 = +document.getElementById("QZ3").value;
+
+      OBJ1 = 0.36*LB2 + 0.46*AI1 + 0.08*AT2 + 0.1*QZ3
+      OBJ2 = 0.44*AT3 + 0.56*AI2C
+      OBJ3 = 0.44*LB3 + 0.56*AI2P
+      OBJ4 = 0.17*AT1 + 0.17*LB1 + 0.66*AT4
+
+      if (OBJ1 >= 4.8) {
+      	document.getElementById("obj1").innerHTML = "OBJ1 OK"
+      }
+      if (OBJ2 >= 4.8) {
+      	document.getElementById("obj2").innerHTML = "OBJ2 OK"
+      }
+      if (OBJ3 >= 4.8) {
+      	document.getElementById("obj3").innerHTML = "OBJ3 OK"
+      }
+      if (OBJ4 >= 4.8) {
+      	document.getElementById("obj4").innerHTML = "OBJ4 OK"
+      }
+        
     }
-    /*  (A1*0.15) + (PI*0.25) + (A2*0.20) + (PF*0.30) + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10  */
+
   </script>	
 </body>
 </html>

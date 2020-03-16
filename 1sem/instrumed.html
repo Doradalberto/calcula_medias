@@ -11,7 +11,7 @@
 	<link rel="icon" type="image/png" href="..\logo.png" sizes="16x16" />
 
 	<title>
-		Acionamentos
+		InstruMed
 	</title>
 </head>
 <body> 
@@ -23,28 +23,28 @@
 	      <i class="fa fa-caret-down"></i>
 	    </button>
 	    <div class="dropdown-content">
-	      <a href="acionamentos.html">Acionamentos Elétricos</a>
-	      <a href="cdados.html">Ciência dos Dados</a>
-	      <a href="codes.html">Co-Design de aplicativos</a>
-	      <a href="fismov.html">Física do Movimento</a>
-	      <a href="matvar.html">Matemática da Variação</a>
+	      <a href="desoft.html">Design de Software</a>
+	      <a href="gde.html">Grandes Desafios da Engenharia</a>
+	      <a href="instrumed.html">Instrumentação e Medição</a>
+	      <a href="modsim.html">Modelagem e simulação do mundo Físico</a>
+	      <a href="natdes.html">Natureza do Design</a>
 	    </div>
 	  </div> 
 	</div>
 
 	<div class="C0">
 	  	<div id="mySidenav" class="sidenav">
-			  <a href="acionamentos.html" id="materia1">Acionamentos Elétricos</a>
-			  <a href="cdados.html" id="materia2">Ciência dos Dados</a>
-			  <a href="codes.html" id="materia3">Co-Design de aplicativos</a>
-			  <a href="fismov.html" id="materia4">Física do Movimento</a>
-			  <a href="matvar.html" id="materia5">Matemática da Variação</a>
+			  <a href="desoft.html" id="materia1" >Design de Software</a>
+			  <a href="gde.html" id="materia2">Grandes Desafios da Engenharia</a>
+			  <a href="instrumed.html" id="materia3">Instrumentação e Medição</a>
+			  <a href="modsim.html" id="materia4">Modelagem e simulação do mundo Físico</a>
+			  <a href="natdes.html" id="materia5">Natureza do Design</a>
 			  <a href="..\homescreen.html" id="materia6">Home</a>
 		</div>
 	</div>
 	<div class="C1" style="height: 710px;">
 		<div class="titulo">
-			<p style="padding-right: 2rem">Acionamentos Elétricos</p>
+			<p style="padding-right: 2rem">Instrumentação e Medição</p>
 		</div>
 		<div class="notas">
 		  <p>Complete com as suas notas.</p>
@@ -67,43 +67,17 @@
 	<div class="C2">
 		<div class="formula">
 			<p> Fórmula para o cálculo: </p>
-			<img src="fotos\acionamentos.png" style="width: 100%">
+			<img src="fotos\instrumed.png" style="width: 100%">
 		</div>
 		<div class="conceito">
 			<p class="subtitulo" style="margin-bottom: 1rem;"> Critérios de aprovação </p>
-			<li> C1) 0.9*(Média de provas) + 0.1*(Média de listas) acima de 5 </li>
-			<li> C2) Média de projetos acima de 5 </li>
-			<p class="subtitulo"> Verificar critérios: </p>
-			<button onclick="myFunction2()" class="botao" style="margin-top: 1rem; margin-bottom: 1rem;">Verificar</button>
-			<div class="criterio">
-				<p style="font-size: 2rem; margin-top: 0.3rem;"> C1) <p id="demo2" style="font-size: 2.5rem; margin-left: 0.6rem;"></p></p>
-			</div>
-			<div class="criterio" >
-				<p style="font-size: 2rem; margin-top: 0.3rem;"> C2) <p id="demo3" style="font-size: 2.5rem; margin-left: 0.6rem;"></p></p>
-			</div>
-			<!-- <p style="font-size: 1rem;"> *observação: as notas devem estar preenchidas </p> -->
-			<p style="font-size: 1rem; margin-top: 1rem">Notas atualizadas para 2019.2</p>
+			<li> Média final acima de 5 </li>
+			<p style="font-size: 1rem; margin-top: 1rem">Notas atualizadas para 2019.1</p>
 		</div>
 	</div>
 
   <script>
     function myFunction() {
-      let A1 = +document.getElementById("A1").value;
-      let A2 = +document.getElementById("A2").value;
-      let A3 = +document.getElementById("A3").value;
-      let A4 = +document.getElementById("A4").value;
-      let L1 = +document.getElementById("L1").value;
-      let L2 = +document.getElementById("L2").value;
-      let L3 = +document.getElementById("L3").value;
-      let L4 = +document.getElementById("L4").value;
-      let PROJ1 = +document.getElementById("PROJ1").value;
-      let PROJ2 = +document.getElementById("PROJ2").value;
-
-      document.getElementById("demo").innerHTML = 0.5*(PROJ1 + PROJ2)/2 + 0.45*(A1 + A2 + A3 + A4)/4 + 0.05*(L1 + L2 + L3 + L4)/4
-
-    }
-
-    function myFunction2() {
       let A1 = +document.getElementById("A1").value;
       let A2 = +document.getElementById("A2").value;
       let R1 = +document.getElementById("R1").value;
@@ -114,12 +88,10 @@
       let RPF = +document.getElementById("RPF").value;
       let APF = +document.getElementById("APF").value;
 
-      document.getElementById("demo2").innerHTML = 0.05*(R1+R2+R3+R4+R5+RPF) + 0.1*(APF) + 0.3*(A1) + 0.3*(A2)
-      document.getElementById("demo3").innerHTML = (PROJ1 + PROJ2) / 2
+      document.getElementById("demo").innerHTML = 0.05*(R1+R2+R3+R4+R5+RPF) + 0.1*(APF) + 0.3*(A1) + 0.3*(A2)
+
     }
 
-
-    /*  (A1*0.15) + (PI*0.25) + (A2*0.20) + (PF*0.30) + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10  */
   </script>	
 </body>
 
