@@ -54,6 +54,12 @@
 			<p> APS 2 <input type="number" id="APS2" max=10 min=0 /></p>
 			<p> APS 3 <input type="number" id="APS3" max=10 min=0 /></p>
 			<p> APS 4 <input type="number" id="APS4" max=10 min=0 /></p>
+			<p> APS 5 <input type="number" id="APS5" max=10 min=0 /></p>
+			<p> APS 6 <input type="number" id="APS6" max=10 min=0 /></p>
+			<p> APS 7 <input type="number" id="APS7" max=10 min=0 /></p>
+			<p> Desafio 1 <input type="number" id="D1" max=10 min=0 /></p>
+			<p> Desafio 2 <input type="number" id="D2" max=10 min=0 /></p>
+			<p> Desafio 3 <input type="number" id="D3" max=10 min=0 /></p>
 		  </div>
 		  <button onclick="myFunction()" class="botao" style="margin-top: 1rem; margin-bottom: 1rem;">Calcular</button>
 		  <p> Média: </p>
@@ -63,14 +69,13 @@
 	<div class="C2">
 		<div class="formula">
 			<p> Fórmula para o cálculo: </p>
-			<img src="fotos\fototeste.png" style="width: 100%">
+			<img src="fotos\dispositivos.png" style="width: 100%">
 		</div>
 		<div class="conceito">
 			<p class="subtitulo" style="margin-bottom: 1rem;"> Critérios de aprovação </p>
-			<li> Lorem ipsum dolor sit amet, consectetur adipiscing elit </li>
-			<li> Quisque iaculis mollis orci, eget elementum tortor pellentesque sit amet </li>
-			<li> In scelerisque turpis ornare est aliquet, ac lacinia elit interdum </li>
-			<p class="subtitulo"> Verificar conceito: </p>
+			<li> Média igual ou maior que 5 nas provas </li>
+			<li> C em todos objetivos de aprendizado </li>
+			<p class="subtitulo"> Verificar 1° conceito: </p>
 			<button onclick="myFunction2()" class="botao" style="margin-top: 1rem; margin-bottom: 1rem;">Verificar</button>
 			<p id="demo2" style="font-size: 2.5rem;"></p>
 			<p style="font-size: 1rem"> *observação: as notas devem estar preenchidas </p>
@@ -84,19 +89,22 @@
       let APS2 = +document.getElementById("APS2").value;
       let APS3 = +document.getElementById("APS3").value;
       let APS4 = +document.getElementById("APS4").value;
+      let APS5 = +document.getElementById("APS5").value;
+      let APS6 = +document.getElementById("APS6").value;
+      let APS7 = +document.getElementById("APS7").value;
       let PI = +document.getElementById("PI").value;
       let PF = +document.getElementById("PF").value;
-      document.getElementById("demo").innerHTML = ((PI + PF)/2)*0.9 + ((APS1 + APS2 + APS3 + APS4)/4)*0.10
+      let D1 = +document.getElementById("D1").value;
+      let D2 = +document.getElementById("D2").value;
+      let D3 = +document.getElementById("D3").value;
+      document.getElementById("demo").innerHTML = ((PI + PF)/2)*0.7 + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10 + ((D1 + D3 + D3)/3)*0.20
     }
 
     function myFunction2() {
-    	let A1 = +document.getElementById("A1").value;
         let PI = +document.getElementById("PI").value;
-        let A2 = +document.getElementById("A2").value;
         let PF = +document.getElementById("PF").value;
-        document.getElementById("demo2").innerHTML = A1 + A2
+        document.getElementById("demo2").innerHTML = (PI + PF)/2
     }
-    /*  (A1*0.15) + (PI*0.25) + (A2*0.20) + (PF*0.30) + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10  */
   </script>	
 </body>
 </html>
