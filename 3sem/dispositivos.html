@@ -48,17 +48,12 @@
 		<div class="notas">
 		  <p>Complete com as suas notas.</p>
 		  <div class='Provas'>
-			<p> Avaliação  1 <input type="number" id="A1" max=10 min=0 /></p>
 			<p> Avaliação Intermediária (PI) <input type="number" id="PI" max=10 min=0 /></p>
-			<p> Avaliação  2 <input type="number" id="A2" max=10 min=0 /></p>
 			<p> Avaliação Final (PF) <input type="number" id="PF" max=10 min=0 /></p>
 			<p> APS 1 <input type="number" id="APS1" max=10 min=0 /></p>
 			<p> APS 2 <input type="number" id="APS2" max=10 min=0 /></p>
 			<p> APS 3 <input type="number" id="APS3" max=10 min=0 /></p>
 			<p> APS 4 <input type="number" id="APS4" max=10 min=0 /></p>
-			<p> APS 5 <input type="number" id="APS5" max=10 min=0 /></p>
-			<p> APS 6 <input type="number" id="APS6" max=10 min=0 /></p>
-			<p> APS 7 <input type="number" id="APS7" max=10 min=0 /></p>
 		  </div>
 		  <button onclick="myFunction()" class="botao" style="margin-top: 1rem; margin-bottom: 1rem;">Calcular</button>
 		  <p> Média: </p>
@@ -89,14 +84,9 @@
       let APS2 = +document.getElementById("APS2").value;
       let APS3 = +document.getElementById("APS3").value;
       let APS4 = +document.getElementById("APS4").value;
-      let APS5 = +document.getElementById("APS5").value;
-      let APS6 = +document.getElementById("APS6").value;
-      let APS7 = +document.getElementById("APS7").value;
-      let A1 = +document.getElementById("A1").value;
       let PI = +document.getElementById("PI").value;
-      let A2 = +document.getElementById("A2").value;
       let PF = +document.getElementById("PF").value;
-      document.getElementById("demo").innerHTML = (A1*0.15) + (PI*0.25) + (A2*0.20) + (PF*0.30) + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10
+      document.getElementById("demo").innerHTML = ((PI + PF)/2)*0.9 + ((APS1 + APS2 + APS3 + APS4)/4)*0.10
     }
 
     function myFunction2() {
