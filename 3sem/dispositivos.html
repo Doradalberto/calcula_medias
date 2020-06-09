@@ -55,6 +55,7 @@
 			<p> APS 3 <input type="number" id="APS3" max=10 min=0 /></p>
 			<p> APS 4 <input type="number" id="APS4" max=10 min=0 /></p>
 			<p> APS 5 <input type="number" id="APS5" max=10 min=0 /></p>
+			<p> APS 6 <input type="number" id="APS6" max=10 min=0 /></p>
 			<p> Desafio 1 <input type="number" id="D1" max=10 min=0 /></p>
 			<p> Desafio 2 <input type="number" id="D2" max=10 min=0 /></p>
 		  </div>
@@ -87,11 +88,12 @@
       let APS3 = +document.getElementById("APS3").value;
       let APS4 = +document.getElementById("APS4").value;
       let APS5 = +document.getElementById("APS5").value;
+      let APS6 = +document.getElementById("APS6").value;
       let PI = +document.getElementById("PI").value;
       let PF = +document.getElementById("PF").value;
       let D1 = +document.getElementById("D1").value;
       let D2 = +document.getElementById("D2").value;
-      document.getElementById("demo").innerHTML = ((PI + PF)/2)*0.7 + ((APS1 + APS2 + APS3 + APS4 + APS5 )/5)*0.10 + ((D1 + D2)/2)*0.20
+      document.getElementById("demo").innerHTML = ((PI + PF)/2)*0.7 + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6)/6)*0.10 + ((D1 + D2)/2)*0.20
     }
 
     function myFunction2() {
