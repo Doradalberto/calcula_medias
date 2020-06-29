@@ -48,17 +48,33 @@
 		<div class="notas">
 		  <p>Complete com as suas notas.</p>
 		  <div class='Provas'>
-			<p> Avaliação  1 <input type="number" id="A1" max=10 min=0 /></p>
+			<p> Quiz 1 <input type="number" id="QZ1" max=10 min=0 /></p>
+			<p> Quiz 2 <input type="number" id="QZ2" max=10 min=0 /></p>
+			<p> Quiz 3 <input type="number" id="QZ3" max=10 min=0 /></p>
+			<p> Quiz 4 <input type="number" id="QZ4" max=10 min=0 /></p>
+			<p> Quiz 5 <input type="number" id="QZ5" max=10 min=0 /></p>
+		  	<p> Exercício 1 <input type="number" id="EX1" max=10 min=0 /></p>
+		  	<p> Exercício 2 <input type="number" id="EX2" max=10 min=0 /></p>
+		  	<p> Exercício 3 <input type="number" id="EX3" max=10 min=0 /></p>
+		  	<p> Exercício 4 <input type="number" id="EX4" max=10 min=0 /></p>
+		  	<p> Exercício 5.1 <input type="number" id="EX51" max=10 min=0 /></p>
+		  	<p> Exercício 5.2 <input type="number" id="EX52" max=10 min=0 /></p>
+		  	<p> Exercício 5.3 <input type="number" id="EX53" max=10 min=0 /></p>
+		  	<p> Exercício 6 <input type="number" id="EX6" max=10 min=0 /></p>
+		  	<p> DTM 1 <input type="number" id="DTM1" max=10 min=0 /></p>
+		  	<p> DTM 2 <input type="number" id="DTM2" max=10 min=0 /></p>
+		  	<p> DTM 3 <input type="number" id="DTM3" max=10 min=0 /></p>
+		  	<p> CAD 1 <input type="number" id="CAD1" max=10 min=0 /></p>
+		  	<p> CAD 2 <input type="number" id="CAD2" max=10 min=0 /></p>
+		  	<p> CAD 3 <input type="number" id="CAD3" max=10 min=0 /></p>
+			<p> Relatório 1 <input type="number" id="RELAT1" max=10 min=0 /></p>
+			<p> Relatório 2 <input type="number" id="RELAT2" max=10 min=0 /></p>
+			<p> DOC 1 <input type="number" id="DOC1" max=10 min=0 /></p>
+			<p> DOC 2 <input type="number" id="DOC2" max=10 min=0 /></p>
+			<p> DOC 3 <input type="number" id="DOC3" max=10 min=0 /></p>
+			<p> DOC 4 <input type="number" id="DOC4" max=10 min=0 /></p>
 			<p> Avaliação Intermediária (PI) <input type="number" id="PI" max=10 min=0 /></p>
-			<p> Avaliação  2 <input type="number" id="A2" max=10 min=0 /></p>
-			<p> Avaliação Final (PF) <input type="number" id="PF" max=10 min=0 /></p>
-			<p> APS 1 <input type="number" id="APS1" max=10 min=0 /></p>
-			<p> APS 2 <input type="number" id="APS2" max=10 min=0 /></p>
-			<p> APS 3 <input type="number" id="APS3" max=10 min=0 /></p>
-			<p> APS 4 <input type="number" id="APS4" max=10 min=0 /></p>
-			<p> APS 5 <input type="number" id="APS5" max=10 min=0 /></p>
-			<p> APS 6 <input type="number" id="APS6" max=10 min=0 /></p>
-			<p> APS 7 <input type="number" id="APS7" max=10 min=0 /></p>
+			<p> Relátório Final (PF) <input type="number" id="RF" max=10 min=0 /></p>
 		  </div>
 		  <button onclick="myFunction()" class="botao" style="margin-top: 1rem; margin-bottom: 1rem;">Calcular</button>
 		  <p> Média: </p>
@@ -85,18 +101,42 @@
 
   <script>
     function myFunction() {
-      let APS1 = +document.getElementById("APS1").value;
-      let APS2 = +document.getElementById("APS2").value;
-      let APS3 = +document.getElementById("APS3").value;
-      let APS4 = +document.getElementById("APS4").value;
-      let APS5 = +document.getElementById("APS5").value;
-      let APS6 = +document.getElementById("APS6").value;
-      let APS7 = +document.getElementById("APS7").value;
-      let A1 = +document.getElementById("A1").value;
+      let QZ1 = +document.getElementById("QZ1").value;
+      let QZ2 = +document.getElementById("QZ2").value;
+      let QZ3 = +document.getElementById("QZ3").value;
+      let QZ4 = +document.getElementById("QZ4").value;
+      let QZ5 = +document.getElementById("QZ5").value;
+      let EX1 = +document.getElementById("EX1").value;
+	  let EX2 = +document.getElementById("EX2").value;
+      let EX3 = +document.getElementById("EX3").value;
+      let EX4 = +document.getElementById("EX4").value;
+      let EX51 = +document.getElementById("EX51").value;
+      let EX52 = +document.getElementById("EX52").value;
+      let EX53 = +document.getElementById("EX53").value;
+      let EX6 = +document.getElementById("EX6").value;
+      let DTM1 = +document.getElementById("DTM1").value;
+      let DTM2 = +document.getElementById("DTM2").value;
+      let DTM3 = +document.getElementById("DTM3").value;
+      let CAD1 = +document.getElementById("CAD1").value;
+      let CAD2 = +document.getElementById("CAD2").value;
+      let CAD3 = +document.getElementById("CAD3").value;
+      let RELAT1 = +document.getElementById("RELAT1").value;
+      let RELAT2 = +document.getElementById("RELAT2").value;
+      let DOC1 = +document.getElementById("DOC1").value;
+      let DOC2 = +document.getElementById("DOC2").value;
+      let DOC3 = +document.getElementById("DOC3").value;
+      let DOC4 = +document.getElementById("DOC4").value;
       let PI = +document.getElementById("PI").value;
-      let A2 = +document.getElementById("A2").value;
-      let PF = +document.getElementById("PF").value;
-      document.getElementById("demo").innerHTML = (A1*0.15) + (PI*0.25) + (A2*0.20) + (PF*0.30) + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10
+      let RF = +document.getElementById("RF").value;
+
+      M_QZ = (QZ1 + QZ2 + QZ3 + QZ4 + QZ5)/5
+      M_EX = (EX1 + EX2 + EX3 + EX4 + EX51 + EX52 + EX53 + EX6)/8
+      M_DTM = (DTM1 + DTM2 + DTM3)/3
+      M_CAD = (CAD1 + CAD2 + CAD3)/3
+      M_RELAT = (RELAT1 + RELAT2)/2
+      M_DOC = (DOC1 + DOC2 + DOC3 + DOC4)/4
+
+      document.getElementById("demo").innerHTML = M_QZ*0.05 + M_DTM*0.1 + M_CAD*0.1 + M_EX*0.05 + PI*0.25 + RF*0.25 + M_RELAT*0.1 + M_DOC*0.1
     }
 
     function myFunction2() {
@@ -106,7 +146,6 @@
         let PF = +document.getElementById("PF").value;
         document.getElementById("demo2").innerHTML = A1 + A2
     }
-    /*  (A1*0.15) + (PI*0.25) + (A2*0.20) + (PF*0.30) + ((APS1 + APS2 + APS3 + APS4 + APS5 + APS6 + APS7)/7)*0.10  */
   </script>	
 </body>
 </html>
